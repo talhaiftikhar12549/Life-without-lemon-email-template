@@ -4,1073 +4,1324 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Email Template</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Simple responsive rules — many clients support this, some ignore */
+      @media only screen and (max-width: 480px) {
+        .wrapper {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .container {
+          padding: 18px !important;
+          box-sizing: border-box !important;
+        }
+        .stack {
+          display: block !important;
+          width: 100% !important;
+          padding: 0 !important;
+        }
+        .hero-title {
+          font-size: 32px !important;
+          line-height: 1 !important;
+        }
+        .section-paragraph {
+          font-size: 16px !important;
+        }
+        .col-text {
+          font-size: 16px !important;
+        }
+        .btn {
+          display: inline-block !important;
+          padding: 12px 18px !important;
+          font-size: 16px !important;
+        }
+        .icons-row {
+          text-align: center !important;
+        }
+        .hide-mobile {
+          display: none !important;
+        }
+      }
+      /* Prevent Gmail from adding default blue link color on phone numbers */
+      a[x-apple-data-detectors],
+      .unstyle-link a {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+    </style>
   </head>
-  <body style="display: flex; align-items: center; justify-content: center">
-    <main style="background-color: #ff26fd; width: 800px">
-      <!-- Hero -->
-      <section>
-        <!-- GOOD NEWS SECTION (Div + Flex Version) -->
-        <div
-          style="
-            background-color: #ffd600;
-            text-align: center;
-            border-radius: 0px 0px 24px 24px;
-            padding: 40px 20px;
-            border: 1px solid #000;
-          "
-        >
-          <!-- Logo -->
-          <img
-            src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/logo-lemon.png"
-            alt="Life Without Lemons"
-            width="150"
-            style="margin-bottom: 20px"
-          />
-
-          <!-- Greeting -->
-          <p
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      background-color: #ffff;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+    "
+  >
+    <table
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      style="width: 100%"
+    >
+      <tr>
+        <td align="center">
+          <!-- Wrapper (fixed center) -->
+          <table
+            class="wrapper"
+            width="640"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
             style="
-              margin: 0;
-              font-size: 20px;
-              font-weight: 800;
-              color: #000;
-              font-family: 'League Spartan', sans-serif;
+              width: 640px;
+              max-width: 640px;
+              margin: 0 auto;
+              background-color: #ff26fd;
             "
           >
-            HI JOHN,
-          </p>
-
-          <!-- Headline -->
-          <h1
-            style="
-              margin: 10px 0;
-              font-size: 48px;
-              line-height: 48px;
-              letter-spacing: -2.4px;
-              font-weight: 900;
-              color: #ff26fd;
-              text-shadow: 8px 3px 0 #000000;
-              display: inline-block;
-              font-family: 'League Spartan', Arial, sans-serif;
-            "
-          >
-            GOOD NEWS!
-          </h1>
-
-          <!-- Description -->
-          <p
-            style="
-              margin: 10px auto 0px;
-              max-width: 500px;
-              font-size: 16px;
-              line-height: 24px;
-              color: #000;
-            "
-          >
-            Your Life without Lemons Accident and
-          </p>
-          <p
-            style="
-              margin: 0px auto 40px;
-              max-width: 500px;
-              font-size: 16px;
-              line-height: 24px;
-              color: #000;
-            "
-          >
-            Injury cover is ready to go!
-          </p>
-          <!-- Main Image -->
-          <div style="display: flex; justify-content: center">
-            <img
-              src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Group-1000003840.png"
-              alt="Good news illustration"
-              width="300"
-              style="display: block"
-            />
-          </div>
-        </div>
-      </section>
-      <!-- Hero -->
-      <!-- center text section -->
-      <section
-        style="
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 85px 0px 155px 0px;
-          position: relative;
-        "
-      >
-        <img
-          src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Vector-4893.png"
-          alt=""
-          style="padding-bottom: 20px"
-        />
-        <p
-          style="
-            margin: 0px;
-            max-width: 500px;
-            font-size: 24px;
-            line-height: 24px;
-            color: #fff;
-            text-align: center;
-            font-family: 'League Spartan', Arial, sans-serif;
-          "
-        >
-          You’re one step closer to the peace of
-        </p>
-        <p
-          style="
-            margin: 0px;
-            max-width: 500px;
-            font-size: 24px;
-            line-height: 24px;
-            color: #fff;
-            text-align: center;
-            font-family: 'League Spartan', Arial, sans-serif;
-          "
-        >
-          mind you deserve when life throws
-        </p>
-        <p
-          style="
-            margin: 0px;
-            max-width: 500px;
-            font-size: 24px;
-            line-height: 24px;
-            color: #fff;
-            text-align: center;
-            font-family: 'League Spartan', Arial, sans-serif;
-          "
-        >
-          the unexpected your way.
-        </p>
-        <img
-          src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Star-5.png"
-          alt=""
-          style="
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            z-index: 1;
-          "
-        />
-        <img
-          src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Ellipse-21.png"
-          alt=""
-          style="
-            position: absolute;
-            top: 65%;
-            left: 15%;
-            transform: translateY(-50%);
-            z-index: 1;
-          "
-        />
-        <img
-          src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Ellipse-20.png"
-          alt=""
-          style="
-            position: absolute;
-            top: 35%;
-            right: 15%;
-            transform: translateY(-50%);
-            z-index: 1;
-          "
-        />
-        <img
-          src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Star-4.png"
-          alt=""
-          style="
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-            z-index: 1;
-          "
-        />
-      </section>
-      <!-- center text section -->
-      <!-- Prizing section -->
-      <section
-        style="
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 70px 0px 50px 0px;
-          position: relative;
-          border-radius: 24px;
-          background-color: #fdd504;
-        "
-      >
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: solid 1px #000;
-            padding: 12px 26px;
-            position: absolute;
-            top: -10%;
-            border-radius: 12px;
-            background-color: #fdd504;
-            box-shadow: 5px 5px 0px 0px #000000;
-          "
-        >
-          <h2
-            style="
-              margin: 0;
-              font-size: 24px;
-              font-weight: 700;
-              color: #000;
-              font-family: 'League Spartan', sans-serif;
-            "
-          >
-            Just to recap, here are your options and
-          </h2>
-          <h2
-            style="
-              margin: 0;
-              font-size: 24px;
-              font-weight: 700;
-              color: #000;
-              font-family: 'League Spartan', sans-serif;
-            "
-          >
-            what your cover could look like
-          </h2>
-        </div>
-        <div
-          style="
-            display: flex;
-            gap: 15px;
-            align-items: center;
-            justify-content: center;
-          "
-        >
-          <div
-            style="
-              padding: 28px;
-              display: flex;
-              border-radius: 16px;
-              flex-direction: column;
-              gap: 70px;
-              justify-content: space-between;
-              background-color: #fff;
-              box-shadow: 5px 5px 0px 0px #000000;
-              border: solid 1px #000;
-            "
-          >
-            <p
-              style="
-                margin: 0;
-                font-size: 20px;
-                font-weight: 800;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              Bronze
-            </p>
-            <div
-              style="
-                margin: 0;
-                font-size: 20px;
-                font-weight: 800;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              <p
-                style="
-                  margin: 0;
-                  font-size: 32px;
-                  font-weight: 800;
-                  color: #000;
-                  font-family: 'League Spartan', sans-serif;
-                "
-              >
-                £34.00<span style="font-size: 16px; font-weight: 400"
-                  >/month</span
+            <tr>
+              <td style="padding: 0">
+                <!-- ===== SECTION 1 — HEADER HERO (YELLOW BG) ===== -->
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  style="background: #fdd504; border-radius: 0px 0px 12px 12px"
                 >
-              </p>
-            </div>
-          </div>
-          <div
-            style="
-              padding: 28px;
-              display: flex;
-              border-radius: 16px;
-              flex-direction: column;
-              gap: 70px;
-              justify-content: space-between;
-              background-color: #fff;
-              box-shadow: 5px 5px 0px 0px #000000;
-              border: solid 1px #000;
-            "
-          >
-            <p
-              style="
-                margin: 0;
-                font-size: 20px;
-                font-weight: 800;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              Silver
-            </p>
-            <div
-              style="
-                margin: 0;
-                font-size: 20px;
-                font-weight: 800;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              <p
-                style="
-                  margin: 0;
-                  font-size: 32px;
-                  font-weight: 800;
-                  color: #000;
-                  font-family: 'League Spartan', sans-serif;
-                "
-              >
-                £53.00<span style="font-size: 16px; font-weight: 400"
-                  >/month</span
-                >
-              </p>
-            </div>
-          </div>
-          <div
-            style="
-              padding: 28px;
-              display: flex;
-              border-radius: 16px;
-              flex-direction: column;
-              gap: 70px;
-              justify-content: space-between;
-              background-color: #fff;
-              box-shadow: 5px 5px 0px 0px #000000;
-              border: solid 1px #000;
-            "
-          >
-            <p
-              style="
-                margin: 0;
-                font-size: 20px;
-                font-weight: 800;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              Gold
-            </p>
-            <div
-              style="
-                margin: 0;
-                font-size: 20px;
-                font-weight: 800;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              <p
-                style="
-                  margin: 0;
-                  font-size: 32px;
-                  font-weight: 800;
-                  color: #000;
-                  font-family: 'League Spartan', sans-serif;
-                "
-              >
-                £72.00<span style="font-size: 16px; font-weight: 400"
-                  >/month</span
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Prizing section -->
-      <!-- Accident Skiness Section -->
-      <section
-        style="
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 65px 0px 115px 0px;
-          position: relative;
-        "
-      >
-        <h2
-          style="
-            margin: 10px 0;
-            font-size: 48px;
-            line-height: 82%;
-            letter-spacing: -2.4px;
-            font-weight: 900;
-            color: #fdd406;
-            text-shadow: 8px 3px 0 #000000;
-            display: inline-block;
-            font-family: 'League Spartan', Arial, sans-serif;
-            width: 50%;
-            text-align: center;
-            padding-bottom: 45px;
-          "
-        >
-          Accident with Sickness
-        </h2>
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 75%;
-            gap: 3px;
-          "
-        >
-          <div
-            style="
-              padding: 28px;
-              display: flex;
-              border-radius: 16px;
-              width: 100%;
-              justify-content: space-between;
-              background-color: #fff;
-              box-shadow: 5px 5px 0px 0px #000000;
-              border: solid 1px #000;
-            "
-          >
-            <p
-              style="
-                margin: 0;
-                font-size: 24px;
-                font-weight: 600;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              Plan Start Date
-            </p>
-            <p
-              style="
-                margin: 0;
-                font-size: 24px;
-                font-weight: 600;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              Oct 27,2025
-            </p>
-          </div>
-          <div
-            style="
-              padding: 28px;
-              display: flex;
-              border-radius: 16px;
-              width: 100%;
-              justify-content: space-between;
-              background-color: #fff;
-              box-shadow: 5px 5px 0px 0px #000000;
-              border: solid 1px #000;
-            "
-          >
-            <p
-              style="
-                margin: 0;
-                font-size: 24px;
-                font-weight: 600;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              Quote Valid Until
-            </p>
-            <p
-              style="
-                margin: 0;
-                font-size: 24px;
-                font-weight: 600;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              Nov 27,2025
-            </p>
-          </div>
-          <div
-            style="
-              padding: 28px;
-              display: flex;
-              border-radius: 16px;
-              width: 100%;
-              justify-content: space-between;
-              background-color: #fff;
-              box-shadow: 5px 5px 0px 0px #000000;
-              border: solid 1px #000;
-            "
-          >
-            <p
-              style="
-                margin: 0;
-                font-size: 24px;
-                font-weight: 600;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              Membership
-            </p>
-            <p
-              style="
-                margin: 0;
-                font-size: 24px;
-                font-weight: 600;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              Monthly
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- Accident Skiness Section -->
-      <!-- Cover Breakdown Section -->
-      <section
-        style="
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 70px 0px 50px 0px;
-          position: relative;
-          border-radius: 24px;
-          background-color: #27ff42;
-        "
-      >
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: solid 1px #000;
-            padding: 12px 26px;
-            position: absolute;
-            top: -10%;
-            border-radius: 12px;
-            background-color: #27ff42;
-            box-shadow: 5px 5px 0px 0px #000000;
-          "
-        >
-          <h2
-            style="
-              margin: 0;
-              font-size: 24px;
-              font-weight: 700;
-              color: #000;
-              font-family: 'League Spartan', sans-serif;
-            "
-          >
-            Your Cover Breakdown
-          </h2>
-        </div>
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 75%;
-            gap: 3px;
-          "
-        >
-          <div
-            style="
-              padding: 28px;
-              display: flex;
-              border-radius: 16px;
-              width: 100%;
-              justify-content: space-between;
-              background-color: #fff;
-              box-shadow: 5px 5px 0px 0px #000000;
-              border: solid 1px #000;
-            "
-          >
-            <p
-              style="
-                margin: 0;
-                font-size: 24px;
-                font-weight: 600;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              Income Benefit
-            </p>
-            <p
-              style="
-                margin: 0;
-                font-size: 24px;
-                font-weight: 600;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              Up to £2,250 /month
-            </p>
-          </div>
-          <div
-            style="
-              padding: 28px;
-              display: flex;
-              border-radius: 16px;
-              width: 100%;
-              justify-content: space-between;
-              background-color: #fff;
-              box-shadow: 5px 5px 0px 0px #000000;
-              border: solid 1px #000;
-            "
-          >
-            <p
-              style="
-                margin: 0;
-                font-size: 24px;
-                font-weight: 600;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              Fracture cover
-            </p>
-            <p
-              style="
-                margin: 0;
-                font-size: 24px;
-                font-weight: 600;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              Up to £3,000 /month
-            </p>
-          </div>
-          <div
-            style="
-              padding: 28px;
-              display: flex;
-              border-radius: 16px;
-              width: 100%;
-              justify-content: space-between;
-              background-color: #fff;
-              box-shadow: 5px 5px 0px 0px #000000;
-              border: solid 1px #000;
-            "
-          >
-            <p
-              style="
-                margin: 0;
-                font-size: 24px;
-                font-weight: 600;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              Rehab cover
-            </p>
-            <p
-              style="
-                margin: 0;
-                font-size: 24px;
-                font-weight: 600;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              £1,000
-            </p>
-          </div>
-          <div
-            style="
-              padding: 28px;
-              display: flex;
-              border-radius: 16px;
-              width: 100%;
-              justify-content: space-between;
-              background-color: #fff;
-              box-shadow: 5px 5px 0px 0px #000000;
-              border: solid 1px #000;
-            "
-          >
-            <p
-              style="
-                margin: 0;
-                font-size: 24px;
-                font-weight: 600;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              Private 24/7 GP
-            </p>
-            <p
-              style="
-                margin: 0;
-                font-size: 24px;
-                font-weight: 600;
-                color: #000;
-                font-family: 'League Spartan', sans-serif;
-              "
-            >
-              FREE
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- Cover Breakdown Section -->
-      <!-- activation cover section -->
-      <section
-        style="
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 85px 0px 155px 0px;
-          position: relative;
-        "
-      >
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-left: 60px;
-          "
-        >
-          <div style="width: 65%; display: flex; flex-direction: column">
-            <h2
-              style="
-                margin: 10px 0;
-                font-size: 40px;
-                line-height: 96%;
-                letter-spacing: -2.4px;
-                font-weight: 900;
-                color: #fdd406;
-                text-shadow: 8px 3px 0 #000000;
-                display: inline-block;
-                font-family: 'League Spartan', Arial, sans-serif;
+                  <tr>
+                    <td align="center" style="padding: 32px 24px">
+                      <!-- logo -->
+                      <img
+                        src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/logo-lemon.png"
+                        alt="Life Without Lemons"
+                        width="150"
+                        style="margin-bottom: 20px"
+                      />
 
-                text-transform: uppercase;
-              "
-            >
-              Activate your cover in minutes, you can apply online or by
-              speaking to our team!
-            </h2>
-            <div
-              style="
-                font-size: 24px;
-                font-weight: 00;
-                color: #fff;
-                line-height: 24px;
-                font-family: 'League Spartan', Arial, sans-serif;
-              "
-            >
-              <p>
-                Double-check your details and activate your plan in just a few
-                clicks.
-              </p>
-              <p>
-                At Life Without Lemons, we make insurance simple, transparent,
-                and stress-free so you can focus on living life to the fullest.
-              </p>
-            </div>
-
-            <div
-              style="
-                font-size: 24px;
-                font-weight: 400;
-                color: #fff;
-                line-height: 24px;
-                font-family: 'League Spartan', Arial, sans-serif;
-              "
-            >
-              <p>
-                Best,<br />
-                <span style="font-size: 24px; font-weight: 600; color: #fdd406"
-                  >The Life Without Lemons Team</span
-                >
-                Insurance, without sour faces
-              </p>
-            </div>
-          </div>
-          <div class="40%">
-            <img
-              style="max-height: 500px"
-              src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Group-1000003838.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-      <!-- activation cover section -->
-      <!-- What Happens -->
-      <section
-        style="
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          overflow: hidden;
-          position: relative;
-          border-radius: 24px;
-          background-color: #fdd504;
-          margin: 0px;
-          padding: 0px;
-        "
-      >
-        <div
-          style="
-            display: flex;
-            gap: 15px;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            margin: 0px;
-            padding: 0px;
-          "
-        >
-          <div style="margin: 0px; padding: 0px">
-            <img
-              src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Group-1000003841-1.png"
-              alt=""
-              height="100%"
-              style="margin: 0px; padding: 0px"
-            />
-          </div>
-          <div style="margin: 0px; padding: 0px">
-            <h2
-              style="
-                margin: 10px 0;
-                font-size: 40px;
-                line-height: 96%;
-                letter-spacing: -2.4px;
-                font-weight: 900;
-                color: #fdd406;
-                text-shadow: 5px 3px 0 #000000;
-
-                display: inline-block;
-                font-family: 'League Spartan', Arial, sans-serif;
-                /* Thin 1px black outline */
-                -webkit-text-stroke: 1px #000;
-
-                text-transform: uppercase;
-              "
-            >
-              What happens next
-            </h2>
-            <p
-              style="
-                font-size: 24px;
-                font-weight: 400;
-                color: #000;
-                line-height: 24px;
-                font-family: 'League Spartan', Arial, sans-serif;
-                width: 75%;
-              "
-            >
-              A member of the team will call you and help you discuss your
-              options as well as answer any questions you have.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- What Happens -->
-
-      <!-- footer -->
-      <!-- FOOTER SECTION -->
-      <table
-        width="100%"
-        border="0"
-        cellspacing="0"
-        cellpadding="0"
-        align="center"
-        style="
-          margin-top: 6px;
-          border-radius: 16px 16px 0px 0px;
-          background-color: #111111;
-          color: #ffd600;
-          font-family: Arial, Helvetica, sans-serif;
-          padding: 40px 0;
-        "
-      >
-        <tr>
-          <td align="center">
-            <table
-              width="600"
-              border="0"
-              cellspacing="0"
-              cellpadding="0"
-              style="text-align: left"
-            >
-              <tr>
-                <!-- Left Column -->
-                <td width="50%" valign="top" style="padding: 20px">
-                  <img
-                    src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/ITEM-1.png"
-                    alt="Life Without Lemons"
-                    width="150"
-                    style="display: block; margin-bottom: 20px"
-                  />
-
-                  <h3 style="margin: 0; color: #ffd600; font-size: 18px">
-                    GET IN TOUCH
-                  </h3>
-
-                  <p
-                    style="
-                      margin: 15px 0 0;
-                      font-size: 13px;
-                      line-height: 20px;
-                      color: #ffd600;
-                    "
-                  >
-                    Life Without Lemons Ltd is a registered company in England,
-                    company number 14839456. Registered office, 46 Park Place,
-                    Leeds, LS1 2RY, UK. Life Without Lemons Ltd is authorised
-                    and regulated by the Financial Conduct Authority, license
-                    number 998436.
-                  </p>
-
-                  <!-- Partner logos -->
-                  <table
-                    border="0"
-                    cellspacing="10"
-                    cellpadding="0"
-                    style="margin-top: 20px"
-                  >
-                    <tr>
-                      <td>
-                        <img
-                          src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Information_Commissioners_Office_logo.svg-1.png"
-                          alt="ICO"
-                          style="display: block"
-                        />
-                      </td>
-                      <td>
-                        <img
-                          src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Frame-1000004015.png"
-                          alt="FCA"
-                          style="display: block"
-                        />
-                      </td>
-                      <td>
-                        <img
-                          src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Frame-1000004014.png"
-                          alt="National Friendly"
-                          style="display: block"
-                        />
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-
-                <!-- Right Column -->
-                <td width="50%" valign="top" style="padding: 20px">
-                  <h3 style="margin: 0; color: #ffd600; font-size: 18px">
-                    See What’s New
-                  </h3>
-
-                  <!-- Social Icons -->
-                  <table
-                    border="0"
-                    cellspacing="10"
-                    cellpadding="0"
-                    style="margin-top: 10px"
-                  >
-                    <tr>
-                      <td>
-                        <a href="https://instagram.com" target="_blank"
-                          ><img
-                            src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/ri_instagram-line.png"
-                            alt="Instagram"
-                            width="22"
-                            style="display: block"
-                        /></a>
-                      </td>
-                      <td>
-                        <a href="https://tiktok.com" target="_blank"
-                          ><img
-                            src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/ic_baseline-tiktok.png"
-                            alt="TikTok"
-                            width="22"
-                            style="display: block"
-                        /></a>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <!-- Contact Info -->
-                  <table
-                    border="0"
-                    cellspacing="0"
-                    cellpadding="0"
-                    style="margin-top: 20px"
-                  >
-                    <tr>
-                      <td valign="middle" style="padding-right: 10px">
-                        <img
-                          src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/ic_baseline-email.png"
-                          alt="Email"
-                          width="18"
-                          style="display: block"
-                        />
-                      </td>
-                      <td
-                        valign="middle"
-                        style="font-size: 14px; color: #ffd600"
-                      >
-                        <a
-                          href="mailto:info@lifewithoutlemons.co.uk"
-                          style="color: #ffd600; text-decoration: none"
-                          >info@lifewithoutlemons.co.uk</a
-                        >
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        valign="middle"
-                        style="padding-right: 10px; padding-top: 10px"
-                      >
-                        <img
-                          src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/material-symbols_call.png"
-                          alt="Phone"
-                          width="18"
-                          style="display: block"
-                        />
-                      </td>
-                      <td
-                        valign="middle"
+                      <!-- Greeting -->
+                      <p
                         style="
-                          font-size: 14px;
-                          color: #ffd600;
-                          padding-top: 10px;
+                          margin: 0;
+                          font-size: 20px;
+                          font-weight: 800;
+                          color: #000;
+                          font-family: 'League Spartan', sans-serif;
                         "
                       >
-                        01138411600
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
+                        HI JOHN,
+                      </p>
 
-      <!-- footer -->
-    </main>
+                      <h1
+                        class="hero-title"
+                        style="
+                          margin: 10px 0;
+                          font-size: 48px;
+                          line-height: 48px;
+                          letter-spacing: -2.4px;
+                          font-weight: 900;
+                          color: #ff26fd;
+                          text-shadow: 8px 3px 0 #000000;
+                          display: inline-block;
+                          font-family: 'League Spartan', Arial, sans-serif;
+                        "
+                      >
+                        GOOD NEWS!
+                      </h1>
+
+                      <!-- section paragraph -->
+                      <p
+                        class="section-paragraph"
+                        style="
+                          font-family: 'League Spartan', Arial, Helvetica,
+                            sans-serif;
+                          font-weight: 400;
+                          font-size: 24px;
+                          line-height: 1;
+                          letter-spacing: -1.2px;
+                          color: #141414;
+                          margin: 8px 0 18px 0;
+                          text-align: center;
+                        "
+                      >
+                        Your Life without Lemons Accident and<br />
+                        Injury cover is ready to go!
+                      </p>
+
+                      <!-- hero image -->
+                      <img
+                        src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Group-1000003840.png"
+                        alt="Header Image"
+                        width="360"
+                        style="
+                          display: block;
+                          border: 0;
+                          margin: 18px auto 0 auto;
+                        "
+                      />
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- =====REAL SECTION 2 — POLICY BREAKDOWN (PINK BG) ===== -->
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  style="background: #ff26fd"
+                >
+                  <tr>
+                    <td align="center" style="padding: 62px 18px 100px 18px">
+                      <div
+                        style="max-width: 520px; width: 100%; margin: 0 auto"
+                      >
+                        <img
+                          src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Vector-4893.png"
+                          alt=""
+                          style="padding-bottom: 20px"
+                        />
+                        <div
+                          style="
+                            margin: 0px;
+                            max-width: 500px;
+                            font-size: 24px;
+                            line-height: 24px;
+                            color: #fff;
+                            text-align: center;
+                            font-family: 'League Spartan', Arial, sans-serif;
+                          "
+                        >
+                          You’re one step closer to the peace of mind you
+                          deserve when life throws the unexpected your way.
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- ===== Pricing SECTION 1 — HEADER HERO (YELLOW BG) ===== -->
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  style="width: 100%"
+                >
+                  <tr>
+                    <td align="center">
+                      <section
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                          padding: 70px 0px 50px 0px;
+                          position: relative;
+                          border-radius: 24px;
+                          background-color: #fdd504;
+                        "
+                      >
+                        <div
+                          style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            border: solid 1px #000;
+                            padding: 12px 26px;
+                            position: absolute;
+                            top: -10%;
+                            border-radius: 12px;
+                            background-color: #fdd504;
+                            box-shadow: 5px 5px 0px 0px #000000;
+                          "
+                        >
+                          <h2
+                            style="
+                              margin: 0;
+                              font-size: 24px;
+                              font-weight: 700;
+                              color: #000;
+                              font-family: 'League Spartan', sans-serif;
+                            "
+                          >
+                            Just to recap, here are your options and
+                          </h2>
+                          <h2
+                            style="
+                              margin: 0;
+                              font-size: 24px;
+                              font-weight: 700;
+                              color: #000;
+                              font-family: 'League Spartan', sans-serif;
+                            "
+                          >
+                            what your cover could look like
+                          </h2>
+                        </div>
+                        <div
+                          style="
+                            display: flex;
+                            gap: 15px;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 20px;
+                            text-align: start;
+                          "
+                        >
+                          <div
+                            style="
+                              padding: 28px;
+                              display: flex;
+                              border-radius: 16px;
+                              flex-direction: column;
+                              gap: 70px;
+                              justify-content: space-between;
+                              background-color: #fff;
+                              box-shadow: 5px 5px 0px 0px #000000;
+                              border: solid 1px #000;
+                            "
+                          >
+                            <p
+                              style="
+                                margin: 0;
+                                font-size: 20px;
+                                font-weight: 800;
+                                color: #000;
+                                font-family: 'League Spartan', sans-serif;
+                              "
+                            >
+                              Bronze
+                            </p>
+                            <div
+                              style="
+                                margin: 0;
+                                font-size: 20px;
+                                font-weight: 800;
+                                color: #000;
+                                font-family: 'League Spartan', sans-serif;
+                              "
+                            >
+                              <p
+                                style="
+                                  margin: 0;
+                                  font-size: 32px;
+                                  font-weight: 800;
+                                  color: #000;
+                                  font-family: 'League Spartan', sans-serif;
+                                "
+                              >
+                                £34.00<span
+                                  style="font-size: 16px; font-weight: 400"
+                                  >/month</span
+                                >
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            style="
+                              padding: 28px;
+                              display: flex;
+                              border-radius: 16px;
+                              flex-direction: column;
+                              gap: 70px;
+                              justify-content: space-between;
+                              background-color: #fff;
+                              box-shadow: 5px 5px 0px 0px #000000;
+                              border: solid 1px #000;
+                            "
+                          >
+                            <p
+                              style="
+                                margin: 0;
+                                font-size: 20px;
+                                font-weight: 800;
+                                color: #000;
+                                font-family: 'League Spartan', sans-serif;
+                              "
+                            >
+                              Silver
+                            </p>
+                            <div
+                              style="
+                                margin: 0;
+                                font-size: 20px;
+                                font-weight: 800;
+                                color: #000;
+                                font-family: 'League Spartan', sans-serif;
+                              "
+                            >
+                              <p
+                                style="
+                                  margin: 0;
+                                  font-size: 32px;
+                                  font-weight: 800;
+                                  color: #000;
+                                  font-family: 'League Spartan', sans-serif;
+                                "
+                              >
+                                £53.00<span
+                                  style="font-size: 16px; font-weight: 400"
+                                  >/month</span
+                                >
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            style="
+                              padding: 28px;
+                              display: flex;
+                              border-radius: 16px;
+                              flex-direction: column;
+                              gap: 70px;
+                              justify-content: space-between;
+                              background-color: #fff;
+                              box-shadow: 5px 5px 0px 0px #000000;
+                              border: solid 1px #000;
+                            "
+                          >
+                            <p
+                              style="
+                                margin: 0;
+                                font-size: 20px;
+                                font-weight: 800;
+                                color: #000;
+                                font-family: 'League Spartan', sans-serif;
+                              "
+                            >
+                              Gold
+                            </p>
+                            <div
+                              style="
+                                margin: 0;
+                                font-size: 20px;
+                                font-weight: 800;
+                                color: #000;
+                                font-family: 'League Spartan', sans-serif;
+                              "
+                            >
+                              <p
+                                style="
+                                  margin: 0;
+                                  font-size: 32px;
+                                  font-weight: 800;
+                                  color: #000;
+                                  font-family: 'League Spartan', sans-serif;
+                                "
+                              >
+                                £72.00<span
+                                  style="font-size: 16px; font-weight: 400"
+                                  >/month</span
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- ===== Accident With Sickness (PINK BG) ===== -->
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  style="background: #ff26fd"
+                >
+                  <tr>
+                    <td align="center" style="padding: 62px 18px">
+                      <div
+                        style="max-width: 520px; width: 100%; margin: 0 auto"
+                      >
+                        <div
+                          style="
+                            margin: 10px 0;
+                            font-size: 48px;
+                            line-height: 82%;
+                            letter-spacing: -2.4px;
+                            font-weight: 900;
+                            color: #fdd406;
+                            text-shadow: 8px 3px 0 #000000;
+                            display: inline-block;
+                            font-family: 'League Spartan', Arial, sans-serif;
+
+                            text-align: center;
+                            padding-bottom: 45px;
+                          "
+                        >
+                          Accident with <br />
+                          Sickness
+                        </div>
+
+                        <!-- policy rows (white boxes) -->
+                        <table
+                          width="100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                          border="0"
+                          style="max-width: 520px; margin: 0 auto"
+                        >
+                          <!-- Row: Cover -->
+                          <tr>
+                            <td style="padding: 0px 0">
+                              <table
+                                width="100%"
+                                cellpadding="0"
+                                cellspacing="0"
+                                border="0"
+                              >
+                                <tr>
+                                  <td
+                                    style="
+                                      background: #ffffff;
+                                      padding: 14px 16px;
+                                      border-style: solid;
+                                      border-color: #141414;
+                                      border-width: 2px 2px 5px 2px;
+                                      border-radius: 10px;
+                                      font-family: 'League Spartan', Arial,
+                                        Helvetica, sans-serif;
+                                      font-size: 20px;
+                                      color: #141414;
+                                    "
+                                  >
+                                    <table
+                                      width="100%"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                    >
+                                      <tr>
+                                        <td
+                                          style="
+                                            text-align: left;
+                                            font-weight: 500;
+                                          "
+                                        >
+                                          Plan Start Date
+                                        </td>
+                                        <td
+                                          style="
+                                            text-align: right;
+                                            font-weight: 700;
+                                          "
+                                        >
+                                          Oct 27,2025
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+
+                          <!-- Row: Cover Price -->
+                          <tr>
+                            <td style="padding: 0px 0">
+                              <table
+                                width="100%"
+                                cellpadding="0"
+                                cellspacing="0"
+                                border="0"
+                              >
+                                <tr>
+                                  <td
+                                    style="
+                                      background: #ffffff;
+                                      padding: 14px 16px;
+                                      border-style: solid;
+                                      border-color: #141414;
+                                      border-width: 2px 2px 5px 2px;
+                                      border-radius: 10px;
+                                      font-family: 'League Spartan', Arial,
+                                        Helvetica, sans-serif;
+                                      font-size: 20px;
+                                      color: #141414;
+                                    "
+                                  >
+                                    <table
+                                      width="100%"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                    >
+                                      <tr>
+                                        <td
+                                          style="
+                                            text-align: left;
+                                            font-weight: 500;
+                                          "
+                                        >
+                                          Quote Valid Until
+                                        </td>
+                                        <td
+                                          style="
+                                            text-align: right;
+                                            font-weight: 700;
+                                          "
+                                        >
+                                          Nov 27,2025
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+
+                          <!-- Row: Sickness Cover -->
+                          <tr>
+                            <td style="padding: 0px 0">
+                              <table
+                                width="100%"
+                                cellpadding="0"
+                                cellspacing="0"
+                                border="0"
+                              >
+                                <tr>
+                                  <td
+                                    style="
+                                      background: #ffffff;
+                                      padding: 14px 16px;
+                                      border-style: solid;
+                                      border-color: #141414;
+                                      border-width: 2px 2px 5px 2px;
+                                      border-radius: 10px;
+                                      font-family: 'League Spartan', Arial,
+                                        Helvetica, sans-serif;
+                                      font-size: 20px;
+                                      color: #141414;
+                                    "
+                                  >
+                                    <table
+                                      width="100%"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                    >
+                                      <tr>
+                                        <td
+                                          style="
+                                            text-align: left;
+                                            font-weight: 500;
+                                          "
+                                        >
+                                          Membership
+                                        </td>
+                                        <td
+                                          style="
+                                            text-align: right;
+                                            font-weight: 700;
+                                          "
+                                        >
+                                          Monthly
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- /policy rows -->
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- ===== SECTION 3 — WHAT'S INCLUDED (GREEN BG) ===== -->
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  style="
+                    background: #27ff42;
+                    margin-top: 18px;
+                    border-radius: 12px;
+                    position: relative;
+                  "
+                >
+                  <tr>
+                    <td align="center" style="padding: 68px 18px">
+                      <div style="max-width: 520px; margin: 0 auto">
+                        <div
+                          style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            border: solid 1px #000;
+                            padding: 12px 26px;
+                            position: absolute;
+                            top: -1%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            border-radius: 12px;
+                            background-color: #27ff42;
+                            box-shadow: 5px 5px 0px 0px #000000;
+                          "
+                        >
+                          <h2
+                            style="
+                              margin: 0;
+                              font-size: 24px;
+                              font-weight: 700;
+                              color: #000;
+                              font-family: 'League Spartan', sans-serif;
+                            "
+                          >
+                            Your Cover Breakdown
+                          </h2>
+                        </div>
+
+                        <table
+                          width="100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                          border="0"
+                        >
+                          <!-- Income Benefit -->
+                          <tr>
+                            <td style="padding: 0px 0">
+                              <table
+                                width="100%"
+                                cellpadding="0"
+                                cellspacing="0"
+                                border="0"
+                              >
+                                <tr>
+                                  <td
+                                    style="
+                                      background: #ffffff;
+                                      padding: 14px 16px;
+                                      border-style: solid;
+                                      border-color: #141414;
+                                      border-width: 2px 2px 5px 2px;
+                                      border-radius: 10px;
+                                      font-family: 'League Spartan', Arial,
+                                        Helvetica, sans-serif;
+                                      font-size: 20px;
+                                      color: #141414;
+                                    "
+                                  >
+                                    <table
+                                      width="100%"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                    >
+                                      <tr>
+                                        <td
+                                          style="
+                                            text-align: left;
+                                            font-weight: 500;
+                                          "
+                                        >
+                                          Income Benefit
+                                        </td>
+                                        <td
+                                          style="
+                                            text-align: right;
+                                            font-weight: 700;
+                                          "
+                                        >
+                                          <span style="font-size: 14px"
+                                            >Up to</span
+                                          >
+                                          £2,250/<span style="font-size: 14px"
+                                            >month</span
+                                          >
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+
+                          <!-- Fracture cover -->
+                          <tr>
+                            <td style="padding: 0px 0">
+                              <table
+                                width="100%"
+                                cellpadding="0"
+                                cellspacing="0"
+                                border="0"
+                              >
+                                <tr>
+                                  <td
+                                    style="
+                                      background: #ffffff;
+                                      padding: 14px 16px;
+                                      border-style: solid;
+                                      border-color: #141414;
+                                      border-width: 2px 2px 5px 2px;
+                                      border-radius: 10px;
+                                      font-family: 'League Spartan', Arial,
+                                        Helvetica, sans-serif;
+                                      font-size: 20px;
+                                      color: #141414;
+                                    "
+                                  >
+                                    <table
+                                      width="100%"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                    >
+                                      <tr>
+                                        <td
+                                          style="
+                                            text-align: left;
+                                            font-weight: 500;
+                                          "
+                                        >
+                                          Fracture cover
+                                        </td>
+                                        <td
+                                          style="
+                                            text-align: right;
+                                            font-weight: 700;
+                                          "
+                                        >
+                                          <span style="font-size: 14px"
+                                            >Up to</span
+                                          >
+                                          £3000/<span style="font-size: 14px"
+                                            >month</span
+                                          >
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+
+                          <!-- Rehab cover -->
+                          <tr>
+                            <td style="padding: 0px 0">
+                              <table
+                                width="100%"
+                                cellpadding="0"
+                                cellspacing="0"
+                                border="0"
+                              >
+                                <tr>
+                                  <td
+                                    style="
+                                      background: #ffffff;
+                                      padding: 14px 16px;
+                                      border-style: solid;
+                                      border-color: #141414;
+                                      border-width: 2px 2px 5px 2px;
+                                      border-radius: 10px;
+                                      font-family: 'League Spartan', Arial,
+                                        Helvetica, sans-serif;
+                                      font-size: 20px;
+                                      color: #141414;
+                                    "
+                                  >
+                                    <table
+                                      width="100%"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                    >
+                                      <tr>
+                                        <td
+                                          style="
+                                            text-align: left;
+                                            font-weight: 500;
+                                          "
+                                        >
+                                          Rehab cover
+                                        </td>
+                                        <td
+                                          style="
+                                            text-align: right;
+                                            font-weight: 700;
+                                          "
+                                        >
+                                          £1,000
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+
+                          <!-- Private GP -->
+                          <tr>
+                            <td style="padding: 0px 0 0 0">
+                              <table
+                                width="100%"
+                                cellpadding="0"
+                                cellspacing="0"
+                                border="0"
+                              >
+                                <tr>
+                                  <td
+                                    style="
+                                      background: #ffffff;
+                                      padding: 14px 16px;
+                                      border-style: solid;
+                                      border-color: #141414;
+                                      border-width: 2px 2px 5px 2px;
+                                      border-radius: 10px;
+                                      font-family: 'League Spartan', Arial,
+                                        Helvetica, sans-serif;
+                                      font-size: 20px;
+                                      color: #141414;
+                                    "
+                                  >
+                                    <table
+                                      width="100%"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                    >
+                                      <tr>
+                                        <td
+                                          style="
+                                            text-align: left;
+                                            font-weight: 500;
+                                          "
+                                        >
+                                          Private 24/7 GP Access
+                                        </td>
+                                        <td
+                                          style="
+                                            text-align: right;
+                                            font-weight: 700;
+                                          "
+                                        >
+                                          FREE
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- ========================================== -->
+                <!-- SECTION 4 – WHAT HAPPENS NEXT -->
+                <!-- ========================================== -->
+                <tr>
+                  <td
+                    align="center"
+                    bgcolor="#FF26FD"
+                    style="padding: 50px 0px 15px 0px"
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding-left: 60px;
+                      "
+                    >
+                      <div
+                        style="
+                          width: 65%;
+                          display: flex;
+                          flex-direction: column;
+                          text-align: start;
+                        "
+                      >
+                        <h2
+                          style="
+                            margin: 10px 0;
+                            font-size: 40px;
+                            line-height: 96%;
+                            letter-spacing: -2.4px;
+                            font-weight: 900;
+                            color: #fdd406;
+                            text-shadow: 8px 3px 0 #000000;
+                            display: inline-block;
+                            font-family: 'League Spartan', Arial, sans-serif;
+
+                            text-transform: uppercase;
+                          "
+                        >
+                          Activate your cover in minutes, you can apply online
+                          or by speaking to our team!
+                        </h2>
+                        <div
+                          style="
+                            font-size: 24px;
+                            font-weight: 00;
+                            color: #fff;
+                            line-height: 24px;
+                            font-family: 'League Spartan', Arial, sans-serif;
+                          "
+                        >
+                          <p>
+                            Double-check your details and activate your plan in
+                            just a few clicks.
+                          </p>
+                          <p>
+                            At Life Without Lemons, we make insurance simple,
+                            transparent, and stress-free so you can focus on
+                            living life to the fullest.
+                          </p>
+                        </div>
+
+                        <div
+                          style="
+                            font-size: 24px;
+                            font-weight: 400;
+                            color: #fff;
+                            line-height: 24px;
+                            font-family: 'League Spartan', Arial, sans-serif;
+                          "
+                        >
+                          <p>
+                            Best,<br />
+                            <span
+                              style="
+                                font-size: 24px;
+                                font-weight: 600;
+                                color: #fdd406;
+                              "
+                              >The Life Without Lemons Team</span
+                            >
+                            Insurance, without sour faces
+                          </p>
+                        </div>
+                      </div>
+                      <div class="40%">
+                        <img
+                          style="max-height: 500px"
+                          src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Group-1000003838.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <section
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        overflow: hidden;
+                        position: relative;
+                        border-radius: 24px;
+                        background-color: #fdd504;
+                        margin: 0px;
+                        padding: 0px;
+                      "
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          gap: 15px;
+                          align-items: center;
+                          justify-content: space-between;
+                          width: 100%;
+                          margin: 0px;
+                          padding: 0px;
+                        "
+                      >
+                        <div style="margin: 0px; padding: 0px">
+                          <img
+                            src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Group-1000003841-1.png"
+                            alt=""
+                            height="100%"
+                            style="margin: 0px; padding: 0px"
+                          />
+                        </div>
+                        <div style="margin: 0px; padding: 0px">
+                          <h2
+                            style="
+                              margin: 10px 0;
+                              font-size: 40px;
+                              line-height: 96%;
+                              letter-spacing: -2.4px;
+                              font-weight: 900;
+                              color: #fdd406;
+                              text-shadow: 5px 3px 0 #000000;
+
+                              display: inline-block;
+                              font-family: 'League Spartan', Arial, sans-serif;
+                              /* Thin 1px black outline */
+                              -webkit-text-stroke: 1px #000;
+
+                              text-transform: uppercase;
+                            "
+                          >
+                            What happens next
+                          </h2>
+                          <p
+                            style="
+                              font-size: 24px;
+                              font-weight: 400;
+                              color: #000;
+                              line-height: 24px;
+                              font-family: 'League Spartan', Arial, sans-serif;
+                              width: 75%;
+                            "
+                          >
+                            A member of the team will call you and help you
+                            discuss your options as well as answer any questions
+                            you have.
+                          </p>
+                        </div>
+                      </div>
+                    </section>
+                  </td>
+                </tr>
+
+                <!-- ========================================== -->
+                <!-- FOOTER SECTION -->
+                <!-- ========================================== -->
+                <tr>
+                  <td align="center" style="border-radius: 12px 12px 0px 0px">
+                    <table
+                      width="100%"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      align="center"
+                      style="
+                        margin-top: 6px;
+                        border-radius: 16px 16px 0px 0px;
+                        background-color: #111111;
+                        color: #ffd600;
+                        font-family: Arial, Helvetica, sans-serif;
+                        padding: 40px 0;
+                      "
+                    >
+                      <tr>
+                        <td align="center">
+                          <table
+                            width="600"
+                            border="0"
+                            cellspacing="0"
+                            cellpadding="0"
+                            style="text-align: left"
+                          >
+                            <tr>
+                              <!-- Left Column -->
+                              <td
+                                width="50%"
+                                valign="top"
+                                style="padding: 20px"
+                              >
+                                <img
+                                  src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/ITEM-1.png"
+                                  alt="Life Without Lemons"
+                                  width="150"
+                                  style="display: block; margin-bottom: 20px"
+                                />
+
+                                <h3
+                                  style="
+                                    margin: 0;
+                                    color: #ffd600;
+                                    font-size: 18px;
+                                  "
+                                >
+                                  GET IN TOUCH
+                                </h3>
+
+                                <p
+                                  style="
+                                    margin: 15px 0 0;
+                                    font-size: 13px;
+                                    line-height: 20px;
+                                    color: #ffd600;
+                                  "
+                                >
+                                  Life Without Lemons Ltd is a registered
+                                  company in England, company number 14839456.
+                                  Registered office, 46 Park Place, Leeds, LS1
+                                  2RY, UK. Life Without Lemons Ltd is authorised
+                                  and regulated by the Financial Conduct
+                                  Authority, license number 998436.
+                                </p>
+
+                                <!-- Partner logos -->
+                                <table
+                                  border="0"
+                                  cellspacing="10"
+                                  cellpadding="0"
+                                  style="margin-top: 20px"
+                                >
+                                  <tr>
+                                    <td>
+                                      <img
+                                        src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Information_Commissioners_Office_logo.svg-1.png"
+                                        alt="ICO"
+                                        style="display: block"
+                                      />
+                                    </td>
+                                    <td>
+                                      <img
+                                        src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Frame-1000004015.png"
+                                        alt="FCA"
+                                        style="display: block"
+                                      />
+                                    </td>
+                                    <td>
+                                      <img
+                                        src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/Frame-1000004014.png"
+                                        alt="National Friendly"
+                                        style="display: block"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+
+                              <!-- Right Column -->
+                              <td
+                                width="50%"
+                                valign="top"
+                                style="padding: 20px"
+                              >
+                                <h3
+                                  style="
+                                    margin: 0;
+                                    color: #ffd600;
+                                    font-size: 18px;
+                                  "
+                                >
+                                  See What’s New
+                                </h3>
+
+                                <!-- Social Icons -->
+                                <table
+                                  border="0"
+                                  cellspacing="10"
+                                  cellpadding="0"
+                                  style="margin-top: 10px"
+                                >
+                                  <tr>
+                                    <td>
+                                      <a
+                                        href="https://instagram.com"
+                                        target="_blank"
+                                        ><img
+                                          src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/ri_instagram-line.png"
+                                          alt="Instagram"
+                                          width="22"
+                                          style="display: block"
+                                      /></a>
+                                    </td>
+                                    <td>
+                                      <a
+                                        href="https://tiktok.com"
+                                        target="_blank"
+                                        ><img
+                                          src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/ic_baseline-tiktok.png"
+                                          alt="TikTok"
+                                          width="22"
+                                          style="display: block"
+                                      /></a>
+                                    </td>
+                                  </tr>
+                                </table>
+
+                                <!-- Contact Info -->
+                                <table
+                                  border="0"
+                                  cellspacing="0"
+                                  cellpadding="0"
+                                  style="margin-top: 20px"
+                                >
+                                  <tr>
+                                    <td
+                                      valign="middle"
+                                      style="padding-right: 10px"
+                                    >
+                                      <img
+                                        src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/ic_baseline-email.png"
+                                        alt="Email"
+                                        width="18"
+                                        style="display: block"
+                                      />
+                                    </td>
+                                    <td
+                                      valign="middle"
+                                      style="font-size: 14px; color: #ffd600"
+                                    >
+                                      <a
+                                        href="mailto:info@lifewithoutlemons.co.uk"
+                                        style="
+                                          color: #ffd600;
+                                          text-decoration: none;
+                                        "
+                                        >info@lifewithoutlemons.co.uk</a
+                                      >
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td
+                                      valign="middle"
+                                      style="
+                                        padding-right: 10px;
+                                        padding-top: 10px;
+                                      "
+                                    >
+                                      <img
+                                        src="https://lifewithoutlemonscover.co.uk/wp-content/uploads/2025/10/material-symbols_call.png"
+                                        alt="Phone"
+                                        width="18"
+                                        style="display: block"
+                                      />
+                                    </td>
+                                    <td
+                                      valign="middle"
+                                      style="
+                                        font-size: 14px;
+                                        color: #ffd600;
+                                        padding-top: 10px;
+                                      "
+                                    >
+                                      01138411600
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
   </body>
 </html>
